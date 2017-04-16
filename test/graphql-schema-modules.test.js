@@ -2,7 +2,7 @@
 import { makeExecutableSchema } from 'graphql-tools';
 import { graphql } from 'graphql';
 import { expect } from 'chai';
-import { mergeModules, loadModules } from './../dist/graphql-modules';
+import { mergeModules, loadModules } from './../dist/graphql-schema-modules';
 
 const buildSchema = (modules) => {
   const { typeDefs, resolvers } = mergeModules(modules);
@@ -16,7 +16,7 @@ const buildSchema = (modules) => {
   return { runQuery, typeDefs, resolvers };
 };
 
-describe('graphql-modules', function () {
+describe('graphql-schema-modules', function () {
 
   it('should merge modules', async function () {
     const moduleA = {

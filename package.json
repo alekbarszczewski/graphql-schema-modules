@@ -1,11 +1,11 @@
 {
-  "name": "graphql-modules",
+  "name": "graphql-schema-modules",
   "version": "0.0.1",
   "engines": {
     "node": "6.x"
   },
   "description": "Modularize and decouple GraphQL schema and resolvers.",
-  "main": "dist/graphql-modules.js",
+  "main": "dist/graphql-schema-modules.js",
   "scripts": {
     "build-test": "npm run build && npm test",
     "test": "./node_modules/.bin/mocha test-dist/*.test.js",
@@ -21,7 +21,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/alekbarszczewski/graphql-modules"
+    "url": "https://github.com/alekbarszczewski/graphql-schema-modules"
   },
   "author": "Alek Barszczewski <alek.barszczewski@gmail.com>",
   "license": "ISC",

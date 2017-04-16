@@ -1,12 +1,12 @@
 
-# graphql-modules [![Build Status](https://travis-ci.org/alekbarszczewski/graphql-modules.svg?branch=master)](https://travis-ci.org/alekbarszczewski/graphql-modules)
+# graphql-schema-modules [![Build Status](https://travis-ci.org/alekbarszczewski/graphql-schema-modules.svg?branch=master)](https://travis-ci.org/alekbarszczewski/graphql-schema-modules)
 
 Modularize and decouple GraphQL schema and resolvers.
 
 ## Installation
 
 ```sh
-$ npm install --save graphql-modules
+$ npm install --save graphql-schema-modules
 ```
 
 ## Features
@@ -109,7 +109,7 @@ export const resolvers = {
 
 buildSchema.js
 ```js
-import { mergeModules, loadModules } from 'graphql-modules';
+import { mergeModules, loadModules } from 'graphql-schema-modules';
 import { makeExecutableSchema } from 'graphql-tools';
 import * as shared from './graphql/shared.js';
 import * as posts from './graphql/posts.js';

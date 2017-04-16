@@ -1,6 +1,6 @@
 
 import { makeExecutableSchema } from 'graphql-tools';
-import { loadModules } from './../src/graphql-modules';
+import { loadModules } from './../src/graphql-schema-modules';
 
 const { typeDefs, resolvers } = loadModules(__dirname + '/graphql');
 
