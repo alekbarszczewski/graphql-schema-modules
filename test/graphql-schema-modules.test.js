@@ -1,4 +1,5 @@
 
+import 'babel-polyfill';
 import { makeExecutableSchema } from 'graphql-tools';
 import { graphql } from 'graphql';
 import { expect } from 'chai';

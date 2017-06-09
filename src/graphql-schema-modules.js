@@ -1,4 +1,5 @@
 
+import 'babel-polyfill';
 import gql from 'graphql-tag';
 import { print } from 'graphql/language/printer';
 import deepExtend from 'deep-extend';

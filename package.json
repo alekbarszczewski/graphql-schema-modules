@@ -2,7 +2,7 @@
   "name": "graphql-schema-modules",
   "version": "0.0.1",
   "engines": {
-    "node": "6.x"
+    "node": "4.x"
   },
   "description": "Modularize and decouple GraphQL schema and resolvers.",
   "main": "dist/graphql-schema-modules.js",
@@ -26,6 +26,7 @@
   "author": "Alek Barszczewski <alek.barszczewski@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "babel-polyfill": "^6.23.0",
     "deep-extend": "^0.4.1",
     "graphql": "^0.9.3",
     "graphql-tag": "^2.0.0",
@@ -34,8 +35,10 @@
   "devDependencies": {
     "babel-cli": "^6.24.0",
     "babel-plugin-transform-async-to-generator": "^6.22.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-es2015-parameters": "^6.23.0",
     "babel-plugin-transform-object-rest-spread": "^6.22.0",
+    "babel-preset-env": "^1.5.2",
     "babel-preset-es2015-node6": "^0.4.0",
     "babel-preset-stage-0": "^6.16.0",
     "babel-register": "^6.23.0",
