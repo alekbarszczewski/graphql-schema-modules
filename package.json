@@ -1,8 +1,9 @@
 {
   "name": "graphql-schema-modules",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
-    "node": ">=4.x"
+    "node": ">=4.x",
+    "npm": ">=3.x"
   },
   "description": "Modularize and decouple GraphQL schema and resolvers.",
   "main": "dist/graphql-schema-modules.js",
