@@ -52,6 +52,10 @@ const mergeTypeDefs = (typeDefs = []) => {
     graphql.definitions.forEach(def => {
       const name = def.name.value;
       if (rootTypes[name]) {
+        // throw error if enum with same name is defined twice
+        if (rootTypes[name].kind === 'EnumTypeDefinition') {
+          throw new Error(`duplicate enum definition '${rootTypes[name].name.value}'`)
+        }
         rootTypes[name].fields = rootTypes[name].fields.concat(def.fields);
       } else {
         rootTypes[name] = def;

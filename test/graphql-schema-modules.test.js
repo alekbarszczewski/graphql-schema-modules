@@ -178,4 +178,16 @@ describe('graphql-schema-modules', function () {
     expect(mutation).to.eql({ data: { postCreate: { id: 1, title: 'Post1' }, userCreate: { id: 1, type: 'MEMBER' } } });
   });
 
+  it('should throw error on duplicate enum definition', () => {
+    const moduleA = {
+      typeDefs: `
+        enum Enum1 { A, B, C }
+        enum Enum1 { A, B, C }
+      `,
+      resolvers: {}
+    };
+    expect(() => {
+      mergeModules([moduleA])
+    }).to.throw(/duplicate enum definition 'Enum1'/)
+  })
 });
